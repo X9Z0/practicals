@@ -1,0 +1,158 @@
+Here’s a detailed yet viva-friendly breakdown of the key concepts you're asking about, plus a few extra ones that might come up in a Data Analysis and Visualization viva:
+
+
+---
+
+1. What is Time Series Analysis?
+
+Definition: Time series analysis involves analyzing data points collected or recorded at specific time intervals (e.g., daily, monthly, quarterly).
+
+Goal: Identify trends, patterns, seasonality, and forecast future values.
+
+Examples: Stock prices, weather data, sales over time, etc.
+
+
+
+---
+
+2. What is ARIMA?
+
+Full Form: AutoRegressive Integrated Moving Average.
+
+Used For: Forecasting time series data.
+
+Components:
+
+AR (AutoRegression): Predicts value using past values (lags).
+
+I (Integrated): Differencing the data to make it stationary (remove trends).
+
+MA (Moving Average): Uses past forecast errors for prediction.
+
+
+Notation: ARIMA(p, d, q)
+
+p: number of AR terms
+
+d: number of differences
+
+q: number of MA terms
+
+
+
+
+---
+
+3. What is Covariance?
+
+Definition: Covariance measures the relationship between two variables — how they change together.
+
+Positive Covariance: Both variables increase together.
+
+Negative Covariance: One increases, the other decreases.
+
+Limitation: Covariance doesn't indicate the strength of the relationship — for that, we use correlation.
+
+
+
+---
+
+4. What is Correlation?
+
+Definition: A standardized form of covariance that ranges between -1 and 1.
+
++1: Perfect positive correlation
+
+-1: Perfect negative correlation
+
+0: No correlation
+
+Common methods: Pearson, Spearman
+
+
+
+---
+
+5. What is Stationarity in Time Series?
+
+Stationary Series: A time series whose properties (mean, variance) do not change over time.
+
+Required for ARIMA models.
+
+Test: Augmented Dickey-Fuller (ADF) test.
+
+
+
+---
+
+6. What is Data Visualization?
+
+The process of representing data in visual formats like graphs, charts, maps, etc.
+
+Goal: Make data easier to understand, identify patterns or outliers.
+
+
+
+---
+
+7. Common Visualization Types:
+
+Line Chart: Time series data
+
+Bar Chart: Categorical data
+
+Histogram: Distribution of numerical data
+
+Box Plot: Spread and outliers
+
+Heatmap: Correlation matrix
+
+Scatter Plot: Relationship between two variables
+
+
+
+---
+
+8. What is EDA (Exploratory Data Analysis)?
+
+The initial process of analyzing data to summarize its main characteristics.
+
+Tools: Pandas, Matplotlib, Seaborn
+
+Steps: Missing values, outliers, distribution, correlations, etc.
+
+
+
+---
+
+9. What is a Time Lag in Time Series?
+
+A lag refers to previous values in a time series (e.g., Sales at time t-1).
+
+Important in building ARIMA or other time-based models.
+
+
+
+---
+
+10. What is Moving Average?
+
+A technique to smooth time series data by averaging over a fixed window.
+
+Helps in reducing noise and identifying trend direction.
+
+
+
+---
+
+If you'd like, I can also create:
+
+Flashcards
+
+Sample viva Q&A pairs
+
+A 1-page PDF summary
+
+
+Want any of those?
+
