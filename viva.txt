@@ -1,0 +1,198 @@
+Sure! Here’s a Viva-style Q&A sheet with clear and concise answers for NumPy, Pandas, and Matplotlib—so you can revise fast and answer confidently.
+
+
+---
+
+NumPy Viva Questions
+
+1. What is NumPy?
+
+NumPy stands for Numerical Python. It's a Python library used for numerical and scientific computing. It provides support for large, multi-dimensional arrays and matrices, along with mathematical operations.
+
+
+---
+
+2. What is an ndarray?
+
+It’s NumPy’s main data structure—a powerful N-dimensional array object that supports vectorized operations (like element-wise addition).
+
+import numpy as np
+arr = np.array([1, 2, 3])
+
+
+---
+
+3. Difference between Python list and NumPy array?
+
+
+---
+
+4. What is broadcasting?
+
+Broadcasting lets NumPy perform operations on arrays of different shapes.
+
+np.array([1, 2, 3]) + 5  # [6 7 8]
+
+
+---
+
+5. How to create arrays in NumPy?
+
+np.zeros((2, 2))         # 2x2 array of 0s
+np.ones((3,))            # 1D array of 1s
+np.arange(0, 10, 2)      # [0 2 4 6 8]
+np.linspace(0, 1, 5)     # 5 numbers between 0 and 1
+
+
+---
+
+6. Useful NumPy functions?
+
+np.mean(), np.median(), np.std()
+
+np.reshape(), np.transpose()
+
+np.dot() for matrix multiplication
+
+
+
+---
+
+Pandas Viva Questions
+
+1. What is Pandas?
+
+Pandas is a data analysis and manipulation library. It provides easy-to-use structures: Series and DataFrame.
+
+
+---
+
+2. What is a Series and DataFrame?
+
+Series: 1D labeled array
+
+
+s = pd.Series([1, 2, 3])
+
+DataFrame: 2D table (rows & columns)
+
+
+df = pd.DataFrame({'a': [1, 2], 'b': [3, 4]})
+
+
+---
+
+3. How to read and write data using Pandas?
+
+df = pd.read_csv('file.csv')     # Read
+df.to_csv('out.csv')             # Write
+
+
+---
+
+4. How to filter/select data?
+
+df['column']                     # Select column
+df[df['marks'] > 50]            # Filter rows
+df.iloc[0:3]                     # By index
+df.loc[:, ['name', 'age']]      # By labels
+
+
+---
+
+5. How to handle missing data?
+
+df.isnull().sum()
+df.dropna()                      # Drop missing
+df.fillna(0)                     # Fill missing
+
+
+---
+
+6. How to perform group-by and aggregation?
+
+df.groupby('department')['salary'].mean()
+
+
+---
+
+7. How to merge/join DataFrames?
+
+pd.merge(df1, df2, on='id')
+pd.concat([df1, df2])
+
+
+---
+
+Matplotlib Viva Questions
+
+1. What is Matplotlib?
+
+Matplotlib is a plotting library used for creating static, animated, and interactive visualizations in Python.
+
+
+---
+
+2. What is Pyplot?
+
+matplotlib.pyplot is a module in Matplotlib. It provides functions to plot graphs quickly (like plt.plot(), plt.title() etc.).
+
+
+---
+
+3. Basic plot example
+
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3]
+y = [4, 5, 6]
+
+plt.plot(x, y)
+plt.title("Line Plot")
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+plt.show()
+
+
+---
+
+4. Other types of plots:
+
+plt.bar() – bar chart
+
+plt.hist() – histogram
+
+plt.scatter() – scatter plot
+
+plt.pie() – pie chart
+
+plt.boxplot() – box plot
+
+
+
+---
+
+5. How to customize a plot?
+
+plt.plot(x, y, color='red', marker='o', linestyle='--')
+plt.grid(True)
+plt.legend(['Sales'])
+
+
+---
+
+6. How to show multiple plots in one figure?
+
+plt.subplot(1, 2, 1)   # 1 row, 2 columns, 1st plot
+plt.plot(x, y)
+
+plt.subplot(1, 2, 2)
+plt.bar(x, y)
+
+plt.show()
+
+
+---
+
+Would you like a printable one-pager or flashcards for revision?
+
